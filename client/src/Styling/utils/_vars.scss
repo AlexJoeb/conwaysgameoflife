@@ -29,12 +29,14 @@
 // ========================
 
     // == Color Def ==
-    $black: #000;
-    $white: #F4F4F4;
-    $gray: #707070;
-    $blue: #395E75;
-    $aqua: #36dcf2;
-    $gold: #f2b136;
+    $black: #16171e;
+    $white: #e8e8e8;
+    $highlight: #2a3042;
+    $background: #262b3c;
+    $base: #222736;
+    $red: #fe5a53;
+    $yellow: #e5c02c;
+    $green: #54c22a;
 
     // == Color Shades ==
     $shades: (
@@ -52,33 +54,47 @@
             dark: darken($white, 10%),
             xdark: darken($white, 15%),
         ),
-        gray: (
-            xlight: lighten($gray, 15%),
-            light: lighten($gray, 10%),
-            base: $gray,
-            dark: darken($gray, 10%),
-            xdark: darken($gray, 15%),
+        base: (
+            xlight: lighten($base, 15%),
+            light: lighten($base, 10%),
+            base: $base,
+            dark: darken($base, 10%),
+            xdark: darken($base, 15%),
         ),
-        blue: (
-            xlight: lighten($blue, 15%),
-            light: lighten($blue, 10%),
-            base: $blue,
-            dark: darken($blue, 10%),
-            xdark: darken($blue, 15%),
+        background: (
+            xlight: lighten($background, 15%),
+            light: lighten($background, 10%),
+            base: $background,
+            dark: darken($background, 10%),
+            xdark: darken($background, 15%),
         ),
-        aqua: (
-            xlight: lighten($aqua, 15%),
-            light: lighten($aqua, 10%),
-            base: $aqua,
-            dark: darken($aqua, 10%),
-            xdark: darken($aqua, 15%),
+        highlight: (
+            xlight: lighten($highlight, 15%),
+            light: lighten($highlight, 10%),
+            base: $highlight,
+            dark: darken($highlight, 10%),
+            xdark: darken($highlight, 15%),
         ),
-        gold: (
-            xlight: lighten($gold, 15%),
-            light: lighten($gold, 10%),
-            base: $gold,
-            dark: darken($gold, 10%),
-            xdark: darken($gold, 15%),
+        red: (
+            xlight: lighten($red, 15%),
+            light: lighten($red, 10%),
+            base: $red,
+            dark: darken($red, 10%),
+            xdark: darken($red, 15%),
+        ),
+        yellow: (
+            xlight: lighten($yellow, 15%),
+            light: lighten($yellow, 10%),
+            base: $yellow,
+            dark: darken($yellow, 10%),
+            xdark: darken($yellow, 15%),
+        ),
+        green: (
+            xlight: lighten($green, 15%),
+            light: lighten($green, 10%),
+            base: $green,
+            dark: darken($green, 10%),
+            xdark: darken($green, 15%),
         ),
     );
 
