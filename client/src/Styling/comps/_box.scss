@@ -35,7 +35,15 @@
 
         &__list {
             height: 40px;
-            width: 90%;
+            width: 95%;
+
+            @include mq($break: tablet) {
+                width: 90%;
+            }
+
+            @include mq($break: desktop) {
+                width: 80%;
+            }
 
             border-radius: 10px;
 
