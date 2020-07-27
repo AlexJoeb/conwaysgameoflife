@@ -1,0 +1,13 @@
+☐ Cellular Automata
+    ☐ What is it?
+        - "Cellular Automation is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rles based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired." 
+        - Source: Mathworld (https://mathworld.wolfram.com/CellularAutomaton.html#:~:text=A%20cellular%20automaton%20is%20a,many%20time%20steps%20as%20desired.)
+    ☐ How is it useful in real life?
+        - Given the current time/climate of this project. Cellular Automata can be referenced to a pandemic. The rules of Conway's Game of Life and Cellular Automata are simular to how a pandemic would spread among citizens. If citizens become to close to eachother, the pandemic continues to reproduce and spread. If someone that has been infected by the pandemic isolates themselves alone or with only other people who are infected, then the pandemic can not spread to healthy people and continue to reproduce.
+☐ Turing Completeness
+    ☐ What is it?
+        - Turing Completeness is a system in which a program can be written that will find an answer.
+        - This can be used in Conways Game of Life because the system we are using is the written algorithm; and the algorithm allows us to come to a completed answer to this question: If I set-up 'x' boxes as alive, which boxes will be alive at the end?
+☐ Double Buffering
+    ☐ What is it?
+        - Double Buffering is a term used to describe a device that has two buffers. The usage of multiple buffers increases the overall throughput of a device and helps prevent bottlenecks.
