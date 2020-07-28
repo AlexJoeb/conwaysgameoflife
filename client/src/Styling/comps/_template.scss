@@ -1,0 +1,64 @@
+.template {
+    width: 95%;
+    height: calc(90vh - 105px);
+    margin: 5px auto 0;
+
+    @include mq($break: tablet) {
+        width: 90%;
+    }
+
+    @include mq($break: desktop) {
+        width: 80%;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: fs(xlarge);
+        font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+        
+        color: color(white);
+
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        p {
+            color: color(white);
+            font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+
+            &.source {
+                font-size: fs(small);
+
+                a {
+                    color: color(white);
+                }
+            }
+
+            & + p {
+                margin-top: 10px;
+            }
+        }
+
+        h2 {
+            font-size: fs(large);
+            font-weight: fw(bold);
+            
+            color:color(white);
+            
+            border-bottom: 3px solid color(white);
+
+            margin: 10px 0;
+            padding: 0 0 5px;
+
+            width: 70%;
+        }
+
+        ul li {
+            color: color(white);
+            list-style: upper-roman;
+            & + li {
+                margin-top: 5px;
+            }
+        }
+    }
+}
