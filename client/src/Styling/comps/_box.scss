@@ -81,11 +81,12 @@
                 &:hover {
                     cursor: pointer;
                     color: color(white);
+                    
                     &.current {
-                        border-bottom: 2px solid color(white);
+                        border-bottom: 5px solid color(white);
                     }
 
-                    bottom: 5px;
+                    border-bottom-width: 5px;
                 }
 
                 &:first-of-type {
@@ -102,8 +103,10 @@
                         color: color(yellow);
 
                         &.current {
-                            border-bottom: 2px solid color(yellow);
+                            border-bottom: 5px solid color(yellow);
                         }
+
+                        border-bottom-width: 5px;
                     }
                 }
 
