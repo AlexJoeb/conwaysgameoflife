@@ -160,6 +160,7 @@ export default class TheGame extends Component {
                     <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
                     <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
                 </ul>
+                <h2>What is Conway's Game of Life?</h2>
             </Template>
         )
     }
