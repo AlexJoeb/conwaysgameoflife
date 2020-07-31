@@ -6,7 +6,7 @@ export default () => {
     return (
         <Template title='Cellular Automata'>
             <h2>What is Cellular Automata?</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Cellular Automation is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rles based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Cellular Automation is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired.</p>
             
             <p>&nbsp;&nbsp;&nbsp;&nbsp;Cellular automata come in a variety of shapes and varieties. One of the most fundamental properties of a cellular automaton is the type of grid on which it is computed. The simplest such "grid" is a one-dimensional line. In two dimensions, square, triangular, and hexagonal grids may be considered.</p>
 
