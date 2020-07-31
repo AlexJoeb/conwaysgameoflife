@@ -1,0 +1,85 @@
+.modebar {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+    @include flex{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    span {
+        @include flex{
+            justify-content: center;
+            align-items: center;
+        }
+
+        display: inline-block;
+
+        color: color(white);
+        background: color(highlight);
+        
+        border-bottom: 2px solid color(black);
+
+        height: 40px;
+        width: 50%;
+
+        &.current {
+            color: color(blue);
+            border-bottom: 2px solid color(blue);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+        &:first-of-type{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        &:last-of-type{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
+
+.modelist {
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 10px;
+    
+    &__item {
+        background: color(highlight);
+        height: 40px;
+        
+        flex-grow: 1;
+
+        @include flex{
+            justify-content: center;
+            align-items: center;
+        }
+
+        & + & { 
+            margin-top: 0;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:first-of-type{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        &:last-of-type{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}

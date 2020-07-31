@@ -37,6 +37,7 @@
     $red: #fe5a53;
     $yellow: #e5c02c;
     $green: #54c22a;
+    $blue: #0080e3;
 
     // == Color Shades ==
     $shades: (
@@ -95,6 +96,13 @@
             base: $green,
             dark: darken($green, 10%),
             xdark: darken($green, 15%),
+        ),
+        blue: (
+            xlight: lighten($blue, 15%),
+            light: lighten($blue, 10%),
+            base: $blue,
+            dark: darken($blue, 10%),
+            xdark: darken($blue, 15%),
         ),
     );
 

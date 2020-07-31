@@ -1,6 +1,6 @@
 .template {
     width: 95%;
-    height: calc(90vh - 105px);
+    min-height: calc(90vh - 105px);
     margin: 5px auto 0;
 
     @include mq($break: tablet) {
@@ -8,7 +8,7 @@
     }
 
     @include mq($break: desktop) {
-        width: 80%;
+        width: 90%;
     }
 
     &__title {
@@ -55,9 +55,30 @@
 
         ul li {
             color: color(white);
-            list-style: upper-roman;
             & + li {
                 margin-top: 5px;
+            }
+        }
+    }
+
+    &__flex {
+        @include flex($dir: column);
+
+        &.child {
+            margin-top: 15px;
+        }
+
+        @include mq($break: desktop){
+            
+            &.dynamic-wrap {
+                @include flex($dir: row);
+            }
+
+            &.child {
+                margin-top: 0;
+                margin-left: 15px;
+
+                flex-grow: 1;
             }
         }
     }
