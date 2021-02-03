@@ -57,7 +57,7 @@ export default class TheGame extends Component {
             ctx,
             grid
         }, () => {
-            const interval = setInterval(() => {
+            setInterval(() => {
                 this.checkAllCells();
                 this.checkPopulation();
                 this.setState(prev => ({ ...prev, generation: prev.generation + 1}))
@@ -147,9 +147,9 @@ export default class TheGame extends Component {
     }
 
     updateCanvas = () => {
-        const { width, height, grid, population, generation } = this.state;
-        for(let x = 0, a = 0; x < width, a < grid.length; x+=10, a++){
-            for(let y = 0, b = 0; y < height, b < grid[a].length; y+=10, b++){
+        const { width, height, grid } = this.state;
+        for(let x = 0, a = 0; x < width || a < grid.length; x+=10, a++){
+            for(let y = 0, b = 0; y < height || b < grid[a].length; y+=10, b++){
                 this.placeSquare(x, y, grid[a][b]);
             }
         }
@@ -232,18 +232,7 @@ export default class TheGame extends Component {
             }    
         })
 
-        switch(preset){
-            case 'randomize':
-                for(let y = 0; y < grid.length; y++){
-                    for(let x = 0; x < grid[y].length; x++){
-                        const chance =Math.floor(Math.random() * 101);
-                        if(chance <= 15){
-                            grid[y][x] = 1;
-                        }else continue;
-                    }
-                }
-                console.log('completed..')
-                break;
+        switch(preset){            
             case 'pulsar':
                 const y = Math.floor((height / 10) / 2);
                 const x = Math.floor((width / 10) / 2);
@@ -304,6 +293,20 @@ export default class TheGame extends Component {
                 grid[y+2][x+6] = 1;
                 grid[y+3][x+6] = 1;
                 grid[y+4][x+6] = 1;
+                break;
+            case 'randomize':
+                for(let y = 0; y < grid.length; y++){
+                    for(let x = 0; x < grid[y].length; x++){
+                        const chance =Math.floor(Math.random() * 101);
+                        if(chance <= 15){
+                            grid[y][x] = 1;
+                        }else continue;
+                    }
+                }
+                console.log('completed..')
+                break;
+            default:
+                break;
         }
         console.log('updating..')
         console.log(grid);

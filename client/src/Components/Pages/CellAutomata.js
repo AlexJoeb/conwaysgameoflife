@@ -12,7 +12,7 @@ export default () => {
 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;The number of colors (or distinct states) 'k' a cellular automaton may assume must also be specified. This number is typically an integer, with k=2 (binary) being the simplest choice. For a binary automaton, color 0 is commonly called "white," and color 1 is commonly called "black". However, cellular automata having a continuous range of possible values may also be considered.</p>
 
-            <p className='source'>Source: <a target='_blank' href='https://mathworld.wolfram.com/CellularAutomaton.html#:~:text=A%20cellular%20automaton%20is%20a,many%20time%20steps%20as%20desired'>MathWorld</a></p>
+            <p className='source'>Source: <a target='_blank' rel="noopener noreferrer" href='https://mathworld.wolfram.com/CellularAutomaton.html#:~:text=A%20cellular%20automaton%20is%20a,many%20time%20steps%20as%20desired'>MathWorld</a></p>
 
             <h2>How can Cellular Automata be compared to real life?</h2>
             
